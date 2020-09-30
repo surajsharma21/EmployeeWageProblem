@@ -6,7 +6,8 @@ namespace EmployeeWageProblem
     {
         static void Main(string[] args)
         {
-            Console.WriteLine($"Total Employee Wage is : {EmpWage.computeEmpWage()}");
+            Console.WriteLine(EmpWage.computeEmpWage("DMart", 20, 2, 10));
+            Console.WriteLine(EmpWage.computeEmpWage("Reliance", 10, 4, 20));
         }
     }
 }
