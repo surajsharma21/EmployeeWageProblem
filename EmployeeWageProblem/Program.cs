@@ -6,8 +6,12 @@ namespace EmployeeWageProblem
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(EmpWage.computeEmpWage("DMart", 20, 2, 10));
-            Console.WriteLine(EmpWage.computeEmpWage("Reliance", 10, 4, 20));
+            EmpWage dMart = new EmpWage("DMart", 20, 2, 10);
+            EmpWage reliance = new EmpWage("Reliance", 10, 4, 20);
+            dMart.computeEmpWage();
+            reliance.computeEmpWage();
+            Console.WriteLine(dMart.toString());
+            Console.WriteLine(reliance.toString());
         }
     }
 }
